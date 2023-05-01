@@ -37,4 +37,5 @@ This includes coding tutorials, resources, coding templates etc.
 
 ## Sample Projects (Using above Technologies)
 
-1. E-commerce Website (React, Node, Express)
+1. React Projects
+   - todo-list
