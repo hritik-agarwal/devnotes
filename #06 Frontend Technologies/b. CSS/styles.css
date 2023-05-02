@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+h1,
+h2 {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 3rem;
+  border: 1px solid red;
+  padding: 0.5em;
+}
+
+p {
+  color: purple;
+  font-size: 1.3rem;
+  padding: 1em;
+  margin: 1em;
+  border: 8px double black;
+  outline: 2px solid purple;
+  outline-offset: -15px;
+}
+
+.class-paragraph {
+  color: rgb(30, 218, 30);
+}
+
+#id-paragraph {
+  color: black;
+  background-color: papayawhip;
+}
+
+#box {
+  width: 7rem;
+  height: 7rem;
+  background-color: yellow;
+  border: 1px solid black;
+  margin: 10px auto;
+  border-radius: 3.5rem;
+  outline: 1px solid red;
+  outline-offset: 0.4rem;
+}
+
+/* Text Typography */
+.word {
+  font-size: 2rem;
+  font-style: oblique;
+  font-weight: bolder;
+  font-family: "Indie Flower", cursive;
+
+  text-indent: 2em;
+  text-align: center; /* other options - left, right */
+  text-decoration: underline; /* other options - overline, line-through */
+  text-transform: capitalize; /* other options - uppercase, lowercase; */
+
+  line-height: 1.5;
+  word-spacing: 1rem;
+  letter-spacing: 0.2em;
+}
+
+/* Styling Links */
+a {
+  font-size: 3rem;
+  color: pink;
+  cursor: pointer;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: green;
+}
+
+/* Styling Lists */
+ol {
+  text-align: center;
+  list-style: decimal-leading-zero inside;
+}
+ol li:nth-child(odd) {
+  color: red;
+}
+ul ::marker {
+  font-size: 1.5rem;
+  color: green;
+  content: "=>";
+}
+
+.float {
+  width: 10vw;
+  height: 10vw;
+  background-color: black;
+  color: white;
+  float: left;
+  margin-right: 0.5rem;
+}
+.clear {
+  clear: both;
+}
+section {
+  background-color: bisque;
+  padding: 0.5rem;
+  border: 1px solid black;
+  display: flow-root;
+}
