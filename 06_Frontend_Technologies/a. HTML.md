@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
   <!-- Metadata about webpage -->
@@ -24,12 +25,10 @@
 
   <body>
     <!-- Divs and Spans -->
-    <p class="conceptHeading" id="headings">Divs and Spans</p>
     <div>I am div</div>
     <span>I am span</span>
 
     <!-- Headings -->
-    <p class="conceptHeading" id="headings">Headings</p>
     <h1>Heading - 1</h1>
     <h2>Heading - 2</h2>
     <h3>Heading - 3</h3>
@@ -38,19 +37,15 @@
     <h6>Heading - 6</h6>
 
     <!-- Paragraph -->
-    <p class="conceptHeading">Paragraph</p>
     <p>This is a paragraph</p>
 
     <!-- Horizontal Rule -->
-    <p class="conceptHeading">Horizontal Rule</p>
     <hr />
 
     <!-- Line Break -->
-    <p class="conceptHeading">Line Break</p>
     <p>This is <br />iine break</p>
 
     <!-- Typography -->
-    <p class="conceptHeading">Typography</p>
     <p
       >This is <strong>bold</strong> text, this is <em>italic text</em>, this is
       <u>underline text</u> and this is <mark>highlighted text.</mark>
@@ -63,11 +58,9 @@
     </address>
 
     <!-- HTML entities -->
-    <p class="conceptHeading">HTML entities</p>
     <p>&lt;&lt;&lt; &copy; Hritik &gt;&gt;&gt;</p>
 
     <!-- Lists in HTML -->
-    <p class="conceptHeading">Lists in HTML</p>
     <p>Unordered List</p>
     <ul>
       <li>apple</li>
@@ -76,9 +69,9 @@
     </ul>
 
     <p>Ordered List</p>
-    <ol>
+    <ol start="3" reversed>
       <li>apple</li>
-      <li>banana</li>
+      <li value="5">banana</li>
       <li>orange</li>
     </ol>
 
@@ -93,36 +86,29 @@
     </dl>
 
     <!-- Links in HTML -->
-    <p class="conceptHeading">Links in HTML</p>
-    <a href="http://google.com">Go to Google</a> <br />
-    <a href="http://google.com" target="_blank">Go to Google in New Tab</a
-    ><br />
-    <a href="about.html" target="_blank">Go to About Page</a><br />
-    <a href="#headings">Go to Headings Topic</a><br />
+    <a href="http://google.com">Go to Google</a>
+    <a href="http://google.com" target="_blank">Go to Google in New Tab</a>
+    <a href="about.html" target="_blank">Go to About Page</a>
+    <a href="#headings">Go to Headings Topic</a>
     <a href="mailto:hello@gmail.com">Email Me</a>
     <a href="tel:+919999999999">Call Me</a>
 
     <!-- Images -->
-    <p class="conceptHeading">Images</p>
     <figure>
-      <img
-        src="https://www.superherotoystore.com/cdn/shop/articles/e33c2fa94c03efa06678116f80d62d0d_708x.jpg?v=1590599656"
-        height="300"
-        alt="Goku"
-        loading="lazy"
-      />
+      <img src="image-url" height="300" alt="Goku" loading="lazy" />
       <figcaption>Goku</figcaption>
     </figure>
 
     <!-- Toggle List -->
-    <p class="conceptHeading">Toggle List</p>
     <details>
       <summary>What is 2+2?</summary>
       <p>It is 4.</p>
     </details>
 
+    <!-- Extra Attributes -->
+    <div data-tooltip="This is extra attribute"> Hello there </div>
+
     <!-- Semantic HTML -->
-    <p class="conceptHeading">Semantic HTML</p>
     <header>
       <h1>Heading</h1>
       <nav aria-label="primary navigation">
@@ -159,7 +145,6 @@
     </footer>
 
     <!-- Tables -->
-    <p class="conceptHeading">Tables</p>
     <table>
       <caption>I am a caption!</caption>
       <thead>
@@ -210,8 +195,7 @@
     <!-- 
       Input Types - text, number, email, password, tel, checkbox, textarea, select-option, input-datalist, radio
      -->
-    <p class="conceptHeading">Forms</p>
-    <form >
+    <form>
       <fieldset>
         <legend>Personal Info</legend>
         <p>
@@ -332,8 +316,13 @@
           placeholder="Type your message here!"
         ></textarea>
       </fieldset>
-      <button type="submit" formaction="https://httpbin.org/get"
-        formmethod="get"> Submit </button>
+      <button
+        type="submit"
+        formaction="https://httpbin.org/get"
+        formmethod="get"
+      >
+        Submit
+      </button>
       <button
         type="submit"
         formaction="https://httpbin.org/post"
@@ -347,3 +336,4 @@
     <p id="bottomGap"></p>
   </body>
 </html>
+```
