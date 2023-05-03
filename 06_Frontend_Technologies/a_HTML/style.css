@@ -1,0 +1,50 @@
+html {
+  font-size: 24px;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: whitesmoke;
+  background-color: #333;
+}
+
+.conceptHeading {
+  color: coral;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  margin: 1rem 0;
+}
+
+#bottomGap {
+  margin-bottom: 500px;
+}
+
+a, a:visited {
+  color: whitesmoke;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td, caption {
+  border: 1px solid #eee;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.5rem;
+}
+
+caption {
+  background-color: green;
+}
+
+thead th {
+  background-color: coral;
+}
+
+tbody th {
+  background-color: rgb(176, 65, 83);
+}
+
+tfoot td {
+  background-color: rgb(128, 119, 119);
+}

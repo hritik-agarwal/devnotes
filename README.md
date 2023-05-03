@@ -7,6 +7,21 @@ This includes coding tutorials, resources, coding templates etc.
 ## List of Topics
 
 1. Data Structures and Algorithms
+   - Arrays
+   - Strings
+   - Stacks
+   - Queues
+   - LinkedList
+   - Binary Tree
+   - Binary Search Tree
+   - Binary Heap
+   - Hashmaps
+   - Graph
+   - Dynamic Programming
+   - Range Queries
+   - Bit Manipulation
+   - Number Theory
+   - Trie
 2. Computer Science Fundamentals
    - Operating System
    - Computer Networks
@@ -33,9 +48,14 @@ This includes coding tutorials, resources, coding templates etc.
 9. Cloud Technologies
    - AWS
 10. Deployment Technologies
-    - Docker
+
+- Docker
 
 ## Sample Projects (Using above Technologies)
 
 1. React Projects
    - todo-list
+
+### Steps to Learn all this Tech (without feeling pressured)
+
+1. HTML, CSS, JS -> React + Node + MongoDB + Express
