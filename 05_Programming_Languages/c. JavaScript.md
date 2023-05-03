@@ -1,6 +1,6 @@
 # Javascript
 
-## Topics
+## Important Concepts
 
 1. Difference between var, let and const
 2. Assignment with value and reference
@@ -24,6 +24,8 @@ Scope is of 3 types - global, local and block
 1. Global scope is when variables are declared outside of any function or block
 2. Local scope is when variables are declared directly inside a funcction
 3. Block scope is when variables are declared directly inside a block such as if, for, switch etc
+
+Hosting is when javascript goes through the compilation phase, it pulls up all the variables and functions declared to the top of their scope.
 
 <table>
   <tr>
@@ -220,3 +222,80 @@ function deepEqual(object1, object2) {
   return true;
 }
 ```
+
+## 9. Async JS - promises, async-await
+
+- Asynchronous code is to do something that can be done in background withought stopping the execution of program
+
+```js
+// Promises
+const greeting = new Promise((resolve, reject) => {
+  // do some stuff
+  resolve(result); // if successful
+  reject("failure reason"); // if failed
+});
+
+greeting()
+  .then((result) => console.log(result)) // when successful
+  .catch((error) => console.log(error)); // when failed
+
+// Async Await
+const runGreeting = async () => {
+  const result = await greeting();
+  console.log(result);
+};
+runGreeting();
+```
+
+## 10. How javascript work and how it runs asynchronous code?
+
+<table>
+  <tr>
+    <th>Topic</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Javascript</td>
+    <td>
+      1. Javascript is a synchronous, single-threaded programming language. <br>
+      2. It can only run one code at a time and can not move to next code without completing current code.
+    </td>
+  </tr>
+  <tr>
+    <td>Environment</td>
+    <td>
+      1. It needs an environment (V8 engine) to run in which it has access to - <br>
+      2. heap memory (execution context) and stack memory (execution stack)
+    </td>
+  </tr>
+  <tr>
+    <td>Hoisting & Execution</td>
+    <td>
+      1. Javascript runs in 2 phases - hoisting phase and execution phase. <br>
+      2. In hoisting phase, it parse the code and find any declaration of vars and functions and put it into a global/local context while In execution phase, it runs the code line by line
+    </td>
+  </tr>
+  <tr>
+    <td>Closures</td>
+    <td>
+      1. Each function when invoked creates a new execution context which has an implicit, permanent link to its lexical environment. This is called closures. <br>
+      2. So, even if a function is a stored in a variable and run in future, it will have access to variables in its lexical environment with values which were present when function was created.
+    </td>
+  </tr>
+  <tr>
+    <td>WebApis, Event Loop & Callback Queue</td>
+    <td>
+      1. Javascript doesn't have any implementation of async codes like setTimeout, network calls etc. <br>
+      2. Instead, it sends all the async codes to webApis (in browser) or C++ apis (in node.js) to run them which runs them in a completely different thread. <br>
+      3. When the apis finish their job, they push the result of the code execution in a queue called callback queue.<br>
+      4. Now, to bring those result back into javascript environment, we have a piece of code called Event Loop which constantly checks for any thing inside the callback queue and if there is anything, it pops from it and push into execution stack as soon as it gets free.
+    </td>
+  </tr>
+  <tr>
+    <td>Blocking UI Thread</td>
+    <td>
+      1. hen we write a javascript code that is very slow, then it blocks the rendering of UI becuase browser can not re-render the UI until the js code is finished. <br>
+      2. In these situations, we must write a async code, so that, the event loop can optimally decide whether to re-render UI or pop an async code result from callback queue.
+    </td>
+  </tr>
+</table>
