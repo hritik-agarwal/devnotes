@@ -1,15 +1,27 @@
 # Javascript
 
-## Important Concepts
+## Table of Content
 
-1. Difference between var, let and const
-2. Assignment with value and reference
-3. Closures in Javascript
-4. Destructuring, Spread Operator and Rest syntax
-5. Array methods - forEach, map, filter, reduce, find, findIndex, indexOf, push, pop, shift, unshift, splice, slice, sort
-6. Generator Functions
-7. Equality Operator (==) vs Identity Operator (===)
-8. Object Comparison
+1. Important concepts related to variables
+    1. <a href="#var-let-const">var, let, const variable declaration</a><br>
+    2. <a href="#var-let-const">comparing variables with == vs ===</a><br>
+    3. <a href="#var-let-const">value & reference variable assignment</a><br>
+    4. <a href="#var-let-const">all mutable and immutable data types</a><br>
+    5. <a href="#var-let-const">difference b/w shallow vs deep copy</a><br>
+2. Various array & objects methods/propertiess
+    1. <a href="#var-let-const">array methods - forEach, map, filter, reduce, find, findIndex, indexOf, push, pop, shift, unshift, splice, slice, sort</a><br>
+    2. <a href="#var-let-const">object methods - \__proto__, prototype</a><br>
+    3. <a href="#var-let-const">destructuring, spread pperator and rest syntaxt</a><br>
+3. Various types of functions in javascript
+    1. <a href="#var-let-const">normal, arrow, IIFE</a><br>
+    2. <a href="#var-let-const">decorator, currying, generator</a><br>
+    3. <a href="#var-let-const">pure, pipe, compose, debounce</a><br>
+4. Asynchronous javascript
+    1. <a href="#var-let-const">callback, setTimeout</a><br>
+    2. <a href="#var-let-const">promises, async-await with try-catch</a><br>
+5. Working of javascript under the hood
+    1. <a href="#var-let-const">Javascript, Execution Context, Hoisting, Closures</a><br>
+    2. <a href="#var-let-const">WebApis, Event Loop, Callback Queue</a><br>
 
 ## 1. Difference between var, let and const
 
@@ -54,12 +66,12 @@ Hosting is when javascript goes through the compilation phase, it pulls up all t
   </tr>
 </table>
 
-## 2. Assignment with value and reference
+## 2. Equality (==) vs Identity (===) Operator, Value vs Reference Assignment, Mutable vs Immutable Data, Shallow vs Deep Copy
 
-- Javascript has 5 primitive data types - number, boolean, string, null and undefined
-- Javascript has 3 secondary data types - array, objects and functions (they all point to memory location where actual data is stored)
+- Javascript has 6 primitive data types - number, boolean, string, bigint, null and undefined
+- Javascript has 2 structural data types - objects (object, array, map, set, date, weakmap) and functions (they all point to memory location where actual data is stored)
 
-Primitive data types are assigned with value but secondary data types are assigned through reference.
+Primitive data types are assigned with value but structural data types are assigned through reference.
 Eg.
 
 ```js
@@ -223,7 +235,7 @@ function deepEqual(object1, object2) {
 }
 ```
 
-## 9. Async JS - promises, async-await
+## 9. Async JS - promises, async-await, try-catch
 
 - Asynchronous code is to do something that can be done in background withought stopping the execution of program
 
@@ -239,10 +251,14 @@ greeting()
   .then((result) => console.log(result)) // when successful
   .catch((error) => console.log(error)); // when failed
 
-// Async Await
+// Async Await with Try Catch
 const runGreeting = async () => {
-  const result = await greeting();
-  console.log(result);
+  try {
+    const result = await greeting();
+    console.log(result);
+  } catch(error) {
+    console.log(error)
+  }
 };
 runGreeting();
 ```
@@ -278,7 +294,7 @@ runGreeting();
   <tr>
     <td>Closures</td>
     <td>
-      1. Each function when invoked creates a new execution context which has an implicit, permanent link to its lexical environment. This is called closures. <br>
+      1. Each function when invoked creates a new execution context which has an implicit, permanent link to its lexical environment even after the parent function is closed. This is called closures. <br>
       2. So, even if a function is a stored in a variable and run in future, it will have access to variables in its lexical environment with values which were present when function was created.
     </td>
   </tr>
@@ -294,8 +310,86 @@ runGreeting();
   <tr>
     <td>Blocking UI Thread</td>
     <td>
-      1. hen we write a javascript code that is very slow, then it blocks the rendering of UI becuase browser can not re-render the UI until the js code is finished. <br>
+      1. When we write a javascript code that is very slow, then it blocks the rendering of UI becuase browser can not re-render the UI until the js code is finished. <br>
       2. In these situations, we must write a async code, so that, the event loop can optimally decide whether to re-render UI or pop an async code result from callback queue.
     </td>
   </tr>
 </table>
+
+## 11. \_\_proto\_\_ and prototype
+
+### \_\_proto\_\_
+
+- It is a way to inherit properties from an object in JavaScript.
+- It exposes the [[Prototype]] of the object through which it is accessed.
+- Use Object.setPrototypeOf and Object.getPrototypeOf instead of \_\_proto\_\_.
+
+```js
+// using in classes
+// Class is transpiled to functions & they have prototype object
+class A {var x = 1;}
+/*
+  function A(){}
+  A.prototype.x = 1;
+*/
+class B {}
+/*
+  function B(){}
+*/
+const a = new A()
+const b = new B()
+b.__proto__ = a;
+
+// Using in objects
+const a = {name: 'hritik'}
+const b = {age: 22, __proto__: a}
+console.log(b.age, b.name, a.name) // 22 "hritik"
+```
+
+## 12. Functions - Decorators, Currying, Pure, Pipe, Compose, IIFE, Debounce
+
+```js
+// Decorators - They wrap main function inside another function which adds extra utility to main function
+// Decorating a sum function with a callCounter & typeChecker
+let sum = (...args) => [...args].reduce((sum, val) => sum + val, 0);
+const callCounter = (fn) => {
+  let count = 0;
+  return (...args) => {
+    console.log(`Function called ${(count += 1)} times.`);
+    return fn(...args);
+  };
+};
+const typeChecker = (fn) => {
+  return (...args) => {
+    const isValid = [..args].every(item => Number.isInteger(item))
+    if(!isValid) throw new Error("Not valid parameter");
+    return fn(...args);
+  };
+};
+sum = callCounter(sum)
+sum = typeChecker(sum)
+console.log(sum(1, 2, 3)); // prints Function called 1 times. 6
+console.log(sum(1, 7, 3)); // prints Function called 2 times. 11
+console.log(sum(1, 7, "hello")); // prints error -> Not valid parameter
+
+
+// Currying - It takes a function that recieves more than one parameter and breaks into a series of unary (single parameter) functions
+// Creating a sandwich
+const buildSandwich = (ing1) => (ing2) => (ing3) => `${ing1} ${ing2} ${ing3}`;
+let mySandwich = buildSandwich("bread")("patty")("cheese");
+console.log(mySandwich); // prints bread patty cheese
+const pavSandwich = buildSandwich("pav") // now we can use pavSandwich with other 2 ingredients
+mySandwich = pavSandwich("patty")("cheese")
+console.log(mySandwich) // prints pav patty cheese
+
+// Convert normal function with fixed no. of parameters to curried function 
+const sum = (a, b, c) => a+b+c;
+const curry = (fn) => {
+  return curried = (...args) => {
+    if(fn.length == args.length) return fn(...args)
+    return curried.bind(null, ...args)
+  }
+}
+const curriedSum = curry(sum)
+console.log(curriedSum(1)(2)(3)) // prints 6
+```
