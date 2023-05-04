@@ -1,30 +1,7 @@
 # Javascript
 
-## Table of Content
-
-1. Important concepts related to variables
-    1. <a href="#var-let-const">var, let, const variable declaration</a><br>
-    2. <a href="#var-let-const">comparing variables with == vs ===</a><br>
-    3. <a href="#var-let-const">value & reference variable assignment</a><br>
-    4. <a href="#var-let-const">all mutable and immutable data types</a><br>
-    5. <a href="#var-let-const">difference b/w shallow vs deep copy</a><br>
-2. Various array & objects methods/propertiess
-    1. <a href="#var-let-const">array methods - forEach, map, filter, reduce, find, findIndex, indexOf, push, pop, shift, unshift, splice, slice, sort</a><br>
-    2. <a href="#var-let-const">object methods - \__proto__, prototype</a><br>
-    3. <a href="#var-let-const">destructuring, spread pperator and rest syntaxt</a><br>
-3. Various types of functions in javascript
-    1. <a href="#var-let-const">normal, arrow, IIFE</a><br>
-    2. <a href="#var-let-const">decorator, currying, generator</a><br>
-    3. <a href="#var-let-const">pure, pipe, compose, debounce</a><br>
-4. Asynchronous javascript
-    1. <a href="#var-let-const">callback, setTimeout</a><br>
-    2. <a href="#var-let-const">promises, async-await with try-catch</a><br>
-5. Working of javascript under the hood
-    1. <a href="#var-let-const">Javascript, Execution Context, Hoisting, Closures</a><br>
-    2. <a href="#var-let-const">WebApis, Event Loop, Callback Queue</a><br>
-
-## 1. Difference between var, let and const
-
+<h2 style="color:coral;">Important concepts related to variables</h2>
+<h3 style="color:limegreen;">Difference between var, let and const</h3>
 Difference is based on 3 parameters :-
 
 1. Scope
@@ -66,7 +43,17 @@ Hosting is when javascript goes through the compilation phase, it pulls up all t
   </tr>
 </table>
 
-## 2. Equality (==) vs Identity (===) Operator, Value vs Reference Assignment, Mutable vs Immutable Data, Shallow vs Deep Copy
+<h3 style="color:limegreen;">Equality Operator (==) vs Identity Operator (===)</h3>
+
+Equality operator do type conversion before checking values.
+Identity operator don't do any type conversion before checking values.
+
+```js
+console.log(0 == "0"); // true
+console.log(0 === "0"); // false
+```
+
+<h3 style="color:limegreen;">Value & Reference Variable Assignment</h3>
 
 - Javascript has 6 primitive data types - number, boolean, string, bigint, null and undefined
 - Javascript has 2 structural data types - objects (object, array, map, set, date, weakmap) and functions (they all point to memory location where actual data is stored)
@@ -83,42 +70,52 @@ let b = a; // a & b are pointing to same location in memory & so changing b will
 let b = [...a]; // spread operator create a new array so changing b won't a
 ```
 
-## 3. Closures in Javascript
+<h3 style="color:limegreen;">All Mutable and Immutable Data Types</h3>
 
-- Functions in JavaScript form closures.
-- A closure is the combination of a function and the lexical environment within which that function was declared.
-- This environment consists of any local variables that were in-scope at the time the closure was created.
+<h3 style="color:limegreen;">Difference between Shallow vs Deep Copy</h3>
+
+- To deep compare 2 different objects, we can't use == or ===.
+- If objects contain only contain key-value pairs in which value is a primitive data type, then we can use shallow equality.
+- If objects contain other referential data type such as array or object, then we have to use deep equality.
 
 ```js
-function makeFunc() {
-  const name = "Mozilla";
-  function displayName() {
-    console.log(name);
+// Shallow Equality
+function shallowEqual(object1, object2) {
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
+  if (keys1.length !== keys2.length) return false;
+  for (let key of keys1) {
+    if (object1[key] !== object2[key]) return false;
   }
-  return displayName;
+  return true;
 }
-const myFunc = makeFunc();
-myFunc(); // myFunc has access to local variables that were available during its creations
+
+// Deep Equality
+function isObject(object) {
+  return object != null && typeof object === "object";
+}
+function deepEqual(object1, object2) {
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
+  if (keys1.length !== keys2.length) return false;
+  for (const key of keys1) {
+    const val1 = object1[key];
+    const val2 = object2[key];
+    const areObjects = isObject(val1) && isObject(val2);
+    if (
+      (areObjects && !deepEqual(val1, val2)) ||
+      (!areObjects && val1 !== val2)
+    )
+      return false;
+  }
+  return true;
+}
 ```
 
-## 4. Destructuring, Spread Operator and Rest syntax
+<h3 style="color:limegreen;">Hoisting</h3>
 
-- We can pull elements out of arrays and objects using these operators
-- We can use spread operator to pass any number of parameters to functions
-
-```js
-const obj = {name: "Hritik", age: 22};
-const {name, age} = obj; // destructuring
-const obj2 = {...obj}; // spread operator
-
-function fun(...args) {
-  // rest syntax
-  console.log(args);
-}
-fun(1, 2, 3, 3);
-```
-
-## 5. Array methods - forEach, map, filter, reduce, find, findIndex, indexOf, push, pop, shift, unshift, splice, slice, sort
+<h2 style="color:coral;">Various Array & Objects Methods</h2>
+<h3 style="color:limegreen;">Array Methods - forEach, map, filter, reduce, find, findIndex, indexOf, push, pop, shift, unshift, splice, slice, sort</h3>
 
 ```js
 const arr = [1, 2, 3, 4, 5, 6];
@@ -167,9 +164,111 @@ const sorter = (a, b) => b - a; // if value returned is <=0 the order remain sam
 arr.sort(sorter); // [6,5,4,3,2,1]
 ```
 
-## 6. Generator Functions
+<h3 style="color:limegreen;">methods - __proto__, prototype</h3>
 
-- Generator functions return different values every time they are called. See eg. below.
+- It is a way to inherit properties from an object in JavaScript.
+- It exposes the [[Prototype]] of the object through which it is accessed.
+- Use Object.setPrototypeOf and Object.getPrototypeOf instead of \_\_proto\_\_.
+
+```js
+// using in classes
+// Class is transpiled to functions & they have prototype object
+class A {var x = 1;}
+/*
+  function A(){}
+  A.prototype.x = 1;
+*/
+class B {}
+/*
+  function B(){}
+*/
+const a = new A()
+const b = new B()
+b.__proto__ = a;
+
+// Using in objects
+const a = {name: 'hritik'}
+const b = {age: 22, __proto__: a}
+console.log(b.age, b.name, a.name) // 22 "hritik"
+```
+
+<h3 style="color:limegreen;">Destructuring, Spread Operator and Rest Syntaxt</h3>
+
+- We can pull elements out of arrays and objects using these operators
+- We can use spread operator to pass any number of parameters to functions
+
+```js
+const obj = {name: "Hritik", age: 22};
+const {name, age} = obj; // destructuring
+const obj2 = {...obj}; // spread operator
+
+function fun(...args) {
+  // rest syntax
+  console.log(args);
+}
+fun(1, 2, 3, 3);
+```
+
+<h2 style="color:coral;">Various Types of Functions in Javascript</h2>
+<h3 style="color:limegreen;">Normal</h3>
+
+<h3 style="color:limegreen;">Arrow</h3>
+
+<h3 style="color:limegreen;">IIFE</h3>
+
+<h3 style="color:limegreen;">Decorator</h3>
+
+```js
+// Decorators - They wrap main function inside another function which adds extra utility to main function
+// Decorating a sum function with a callCounter & typeChecker
+let sum = (...args) => [...args].reduce((sum, val) => sum + val, 0);
+const callCounter = (fn) => {
+  let count = 0;
+  return (...args) => {
+    console.log(`Function called ${(count += 1)} times.`);
+    return fn(...args);
+  };
+};
+const typeChecker = (fn) => {
+  return (...args) => {
+    const isValid = [..args].every(item => Number.isInteger(item))
+    if(!isValid) throw new Error("Not valid parameter");
+    return fn(...args);
+  };
+};
+sum = callCounter(sum)
+sum = typeChecker(sum)
+console.log(sum(1, 2, 3)); // prints Function called 1 times. 6
+console.log(sum(1, 7, 3)); // prints Function called 2 times. 11
+console.log(sum(1, 7, "hello")); // prints error -> Not valid parameter
+```
+
+<h3 style="color:limegreen;">Currying</h3>
+
+```js
+// Currying - It takes a function that recieves more than one parameter and breaks into a series of unary (single parameter) functions
+// Creating a sandwich
+const buildSandwich = (ing1) => (ing2) => (ing3) => `${ing1} ${ing2} ${ing3}`;
+let mySandwich = buildSandwich("bread")("patty")("cheese");
+console.log(mySandwich); // prints bread patty cheese
+const pavSandwich = buildSandwich("pav"); // now we can use pavSandwich with other 2 ingredients
+mySandwich = pavSandwich("patty")("cheese");
+console.log(mySandwich); // prints pav patty cheese
+
+// Convert normal function with fixed no. of parameters to curried function
+const sum = (a, b, c) => a + b + c;
+const curry = (fn) => {
+  return (curried = (...args) => {
+    if (fn.length == args.length) return fn(...args);
+    return curried.bind(null, ...args);
+  });
+};
+const curriedSum = curry(sum);
+console.log(curriedSum(1)(2)(3)); // prints 6
+```
+
+<h3 style="color:limegreen;">Generator</h3>
+Generator functions return different values every time they are called. See eg. below.
 
 ```js
 function* generator() {
@@ -185,59 +284,20 @@ console.log(gen.next().value); // 3
 console.log(gen.next().value); // undefined
 ```
 
-## 7. Equality Operator (==) vs Identity Operator (===)
+<h3 style="color:limegreen;">Pure</h3>
 
-- Equality operator do type conversion before checking values.
-- Identity operator don't do any type conversion before checking values.
+<h3 style="color:limegreen;">Pipe</h3>
 
-```js
-console.log(0 == "0"); // true
-console.log(0 === "0"); // false
-```
+<h3 style="color:limegreen;">Compose</h3>
 
-## 8. Object Comparison
+<h3 style="color:limegreen;">Debounce</h3>
 
-- To deep compare 2 different objects, we can't use == or ===.
-- If objects contain only contain key-value pairs in which value is a primitive data type, then we can use shallow equality.
-- If objects contain other referential data type such as array or object, then we have to use deep equality.
+<h2 style="color:coral;">Asynchronous javascript</h2>
 
-```js
-// Shallow Equality
-function shallowEqual(object1, object2) {
-  const keys1 = Object.keys(object1);
-  const keys2 = Object.keys(object2);
-  if (keys1.length !== keys2.length) return false;
-  for (let key of keys1) {
-    if (object1[key] !== object2[key]) return false;
-  }
-  return true;
-}
+<h3 style="color:limegreen;">Callback, setTimeout</h3>
 
-// Deep Equality
-function isObject(object) {
-  return object != null && typeof object === "object";
-}
-function deepEqual(object1, object2) {
-  const keys1 = Object.keys(object1);
-  const keys2 = Object.keys(object2);
-  if (keys1.length !== keys2.length) return false;
-  for (const key of keys1) {
-    const val1 = object1[key];
-    const val2 = object2[key];
-    const areObjects = isObject(val1) && isObject(val2);
-    if (
-      (areObjects && !deepEqual(val1, val2)) ||
-      (!areObjects && val1 !== val2)
-    )
-      return false;
-  }
-  return true;
-}
-```
-
-## 9. Async JS - promises, async-await, try-catch
-
-- Asynchronous code is to do something that can be done in background withought stopping the execution of program
+<h3 style="color:limegreen;">Promises, Async-Await with Try-Catch</h3>
+Asynchronous code is to do something that can be done in background withought stopping the execution of program
 
 ```js
 // Promises
@@ -256,14 +316,32 @@ const runGreeting = async () => {
   try {
     const result = await greeting();
     console.log(result);
-  } catch(error) {
-    console.log(error)
+  } catch (error) {
+    console.log(error);
   }
 };
 runGreeting();
 ```
 
-## 10. How javascript work and how it runs asynchronous code?
+<h2 style="color:coral;">Working of Javascript Under the Hood</h2>
+
+<h3 style="color:limegreen;">Javascript, Execution Context, Closures, WebApis, Event Loop, Callback Queue</h3>
+
+- Functions in JavaScript form closures.
+- A closure is the combination of a function and the lexical environment within which that function was declared.
+- This environment consists of any local variables that were in-scope at the time the closure was created.
+
+```js
+function makeFunc() {
+  const name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+const myFunc = makeFunc();
+myFunc(); // myFunc has access to local variables that were available during its creations
+```
 
 <table>
   <tr>
@@ -315,81 +393,3 @@ runGreeting();
     </td>
   </tr>
 </table>
-
-## 11. \_\_proto\_\_ and prototype
-
-### \_\_proto\_\_
-
-- It is a way to inherit properties from an object in JavaScript.
-- It exposes the [[Prototype]] of the object through which it is accessed.
-- Use Object.setPrototypeOf and Object.getPrototypeOf instead of \_\_proto\_\_.
-
-```js
-// using in classes
-// Class is transpiled to functions & they have prototype object
-class A {var x = 1;}
-/*
-  function A(){}
-  A.prototype.x = 1;
-*/
-class B {}
-/*
-  function B(){}
-*/
-const a = new A()
-const b = new B()
-b.__proto__ = a;
-
-// Using in objects
-const a = {name: 'hritik'}
-const b = {age: 22, __proto__: a}
-console.log(b.age, b.name, a.name) // 22 "hritik"
-```
-
-## 12. Functions - Decorators, Currying, Pure, Pipe, Compose, IIFE, Debounce
-
-```js
-// Decorators - They wrap main function inside another function which adds extra utility to main function
-// Decorating a sum function with a callCounter & typeChecker
-let sum = (...args) => [...args].reduce((sum, val) => sum + val, 0);
-const callCounter = (fn) => {
-  let count = 0;
-  return (...args) => {
-    console.log(`Function called ${(count += 1)} times.`);
-    return fn(...args);
-  };
-};
-const typeChecker = (fn) => {
-  return (...args) => {
-    const isValid = [..args].every(item => Number.isInteger(item))
-    if(!isValid) throw new Error("Not valid parameter");
-    return fn(...args);
-  };
-};
-sum = callCounter(sum)
-sum = typeChecker(sum)
-console.log(sum(1, 2, 3)); // prints Function called 1 times. 6
-console.log(sum(1, 7, 3)); // prints Function called 2 times. 11
-console.log(sum(1, 7, "hello")); // prints error -> Not valid parameter
-
-
-// Currying - It takes a function that recieves more than one parameter and breaks into a series of unary (single parameter) functions
-// Creating a sandwich
-const buildSandwich = (ing1) => (ing2) => (ing3) => `${ing1} ${ing2} ${ing3}`;
-let mySandwich = buildSandwich("bread")("patty")("cheese");
-console.log(mySandwich); // prints bread patty cheese
-const pavSandwich = buildSandwich("pav") // now we can use pavSandwich with other 2 ingredients
-mySandwich = pavSandwich("patty")("cheese")
-console.log(mySandwich) // prints pav patty cheese
-
-// Convert normal function with fixed no. of parameters to curried function 
-const sum = (a, b, c) => a+b+c;
-const curry = (fn) => {
-  return curried = (...args) => {
-    if(fn.length == args.length) return fn(...args)
-    return curried.bind(null, ...args)
-  }
-}
-const curriedSum = curry(sum)
-console.log(curriedSum(1)(2)(3)) // prints 6
-```
