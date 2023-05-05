@@ -215,6 +215,13 @@ fun(1, 2, 3, 3);
 <h3 style="color:limegreen;">Arrow</h3>
 
 <h3 style="color:limegreen;">IIFE</h3>
+* IIFE - Immediately Invoked Function Expression
+* It is a function which is called at the time of its declaration itself.
+
+```js
+const sum = ((a,b) => {return a + b})(3,5);
+console.log(sum) // prints 8
+```
 
 <h3 style="color:limegreen;">Decorator</h3>
 
@@ -267,7 +274,7 @@ const curriedSum = curry(sum);
 console.log(curriedSum(1)(2)(3)); // prints 6
 ```
 
-<h3 style="color:limegreen;">Generator</h3>
+<h3 style="color:limegreen;">Generator Function</h3>
 Generator functions return different values every time they are called. See eg. below.
 
 ```js
@@ -284,7 +291,18 @@ console.log(gen.next().value); // 3
 console.log(gen.next().value); // undefined
 ```
 
-<h3 style="color:limegreen;">Pure</h3>
+<h3 style="color:limegreen;">Pure Function</h3>
+
+Pure functions are functions that don't produce side effects and, when called with the same input parameters, will always return the same output. 
+
+```js
+// Here pushElement doesn't mutate the array directly and instead returns a new array and hence its output will always be same if the input is same.
+const pushElement = (array, value) => {
+  const newArray = deepClone(aray)
+  newArray.push(value)
+  return newArray
+}
+```
 
 <h3 style="color:limegreen;">Pipe</h3>
 

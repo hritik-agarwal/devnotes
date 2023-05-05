@@ -51,11 +51,7 @@ This includes coding tutorials, resources, coding templates etc.
 
 - Docker
 
-## Sample Projects (Using above Technologies)
+## Preparation Strategy
 
-1. React Projects
-   - todo-list
-
-### Steps to Learn all this Tech (without feeling pressured)
-
-1. HTML, CSS, JS -> React + Node + MongoDB + Express
+1. MERN Stack (4hours - 2pm to 6pm) + DSA (4hours - 6pm to 7pm and 9pm to 12am) + System Design (4hours - 12am to 4am) => 12 hours/day
+2. Expected Deadline is 10days i.e. revise everything by 15th May => Then apply aggressively
