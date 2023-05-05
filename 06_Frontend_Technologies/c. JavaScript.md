@@ -1,5 +1,14 @@
 # Javascript
 
+## Topics to Cover
+
+1. Variables, Operations
+2. Control Flow
+3. Arrays, Objects
+4. Object Oriented Programming
+5. Event Listeners, Web APIs
+6. Asynchronous JS
+
 <h2 style="color:coral;">Important concepts related to variables</h2>
 <h3 style="color:limegreen;">Difference between var, let and const</h3>
 Difference is based on 3 parameters :-
