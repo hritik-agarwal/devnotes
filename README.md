@@ -55,3 +55,25 @@ This includes coding tutorials, resources, coding templates etc.
 
 1. MERN Stack (4hours - 2pm to 6pm) + DSA (4hours - 6pm to 7pm and 9pm to 12am) + System Design (4hours - 12am to 4am) => 12 hours/day
 2. Expected Deadline is 10days i.e. revise everything by 15th May => Then apply aggressively
+
+
+## Backend 
+1. Frameworks (Next, Express, Laravel, Flask)
+2. Programming Langugaes (Javascript, Typescript, Java, Python, Go, C#, Rust, Ruby, PHP)
+3. Database (Relational (MySQL, PostgreSQL, Aurora), NonRelational (MongoDB, Cassandra, Firebase))
+4. Caching (CDN, BrowserCache, Redis, Memcache)
+5. Testing (Unit testing, Integration Testing, Functional Testing)
+6. VCS (Github, Gitlab, BitBucket)
+7. CI/CD (Github Actions, CircleCI, ArgoCD)
+8. API (REST, GraphQL, tRPC)
+9. Architectural Pattern (Microservice, Monolithic, Serverless)
+10. Containerization (Docker, Container, LXC)
+
+## Cloud Native Architecture
+
+There are 2 main focus - Availability and Scalability
+There are 4 pillars to cloud native 
+1. DevOps
+2. Cloud Native Open Standards
+3. Containers
+4. Microservies
