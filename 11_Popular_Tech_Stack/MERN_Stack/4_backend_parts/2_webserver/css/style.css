@@ -1,0 +1,10 @@
+body {
+  min-height: 100vh;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

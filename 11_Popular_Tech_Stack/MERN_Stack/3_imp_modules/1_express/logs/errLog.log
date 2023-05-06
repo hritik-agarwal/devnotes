@@ -1,0 +1,4 @@
+20230506	17:31:30	a6d398a8-b430-4953-9d7f-2e376ef7adaa	Error: Not allowed by CORS
+20230506	17:31:30	dd2b5a34-6d68-4b6f-a6a2-bd4be5fc5849	Error: Not allowed by CORS
+20230506	19:34:16	c8904849-dfeb-4d1e-8621-99daaa315a8d	SyntaxError: Expected double-quoted property name in JSON at position 36
+20230506	21:55:15	213fb50c-c3bc-432f-a79d-05e5548e5aa5	TypeError: Assignment to constant variable.

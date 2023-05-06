@@ -27,3 +27,12 @@ There are following topics to it-
 Important Modules
 1. os, path, fs, process, events, http
 2. uuid, date-fns, bcrypt, dotenv, express, mongoose
+
+
+## Node Project Structure
+
+There are 4 important parts to a node project :- Server + APIs + Assets + Database
+1. Server + Middleware + Config
+2. Routes + Controllers + Logs
+3. Views + Public
+4. Model
