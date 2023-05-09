@@ -57,7 +57,7 @@ This includes coding tutorials, resources, coding templates etc.
 2. Expected Deadline is 10days i.e. revise everything by 15th May => Then apply aggressively
 
 
-## Backend 
+## Technologies 
 1. Frameworks (Next, Express, Laravel, Flask)
 2. Programming Langugaes (Javascript, Typescript, Java, Python, Go, C#, Rust, Ruby, PHP)
 3. Database (Relational (MySQL, PostgreSQL, Aurora), NonRelational (MongoDB, Cassandra, Firebase))
@@ -77,3 +77,22 @@ There are 4 pillars to cloud native
 2. Cloud Native Open Standards
 3. Containers
 4. Microservies
+
+Frontend - *React, Vue, Angular
+Backend - Flask, Django, Ruby, *Node, Golang
+Database - MySQL, PostgreSQL, MongoDB
+
+
+Javascript/Java/Python
+Javascript (React,Angular,Vue + Node,Express)
+Java (Spring Boot)
+Python (Django)
+
+Database (SQL and NoSQL databases)
+Cloud (AWS, Azure, GCP)
+CI/CD (github actions)
+
+My goal is the go all in. I want to target best of the companies with best of the package.
+Target : 100K dollars
+
+PROJECTS

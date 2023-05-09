@@ -36,3 +36,11 @@ There are 4 important parts to a node project :- Server + APIs + Assets + Databa
 2. Routes + Controllers + Logs
 3. Views + Public
 4. Model
+
+
+Important HTTP status codes
+* 1xxs => Informational
+* 2xxs => Success (200 => OK)
+* 3xxs => Redirection (301 => Permanent Redirection)
+* 4xxs => Client Error (401 => Unauthorised, 404 => Not Found, 409 => Conflict, 410 => Gone)
+* 5xxs => Server Error (500 => Internal Server Error, 503 => Server Down)

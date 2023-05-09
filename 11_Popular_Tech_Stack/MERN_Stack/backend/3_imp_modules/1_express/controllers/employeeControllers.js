@@ -1,6 +1,6 @@
 const {v4: uuid} = require("uuid");
 
-const data = [];
+const data = require("./../model/employees.json");
 
 const getAllEmployees = (req, res) => {
   res.json(data);
