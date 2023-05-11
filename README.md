@@ -45,11 +45,11 @@ This includes coding tutorials, resources, coding templates etc.
    - SQL
    - MySQL
    - MongoDB
+   - Redis
 9. Cloud Technologies
    - AWS
 10. Deployment Technologies
-
-- Docker
+   - Docker
 
 ## Preparation Strategy
 
@@ -78,8 +78,8 @@ There are 4 pillars to cloud native
 3. Containers
 4. Microservies
 
-Frontend - *React, Vue, Angular
-Backend - Flask, Django, Ruby, *Node, Golang
+Frontend - React, Vue, Angular
+Backend - Flask, Django, Ruby, Node, Golang
 Database - MySQL, PostgreSQL, MongoDB
 
 
@@ -95,4 +95,4 @@ CI/CD (github actions)
 My goal is the go all in. I want to target best of the companies with best of the package.
 Target : 100K dollars
 
-PROJECTS
+### PROJECTS
