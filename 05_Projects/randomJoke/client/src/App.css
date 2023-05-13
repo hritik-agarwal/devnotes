@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background: url("/assets/bg.jpeg");
+  width: 100%;
+  min-height: 100vh;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer {
+  width: min(50vw, 700px);
+  min-height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.45);
+}
+
+.inputText {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.inputAnswer {
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.setup {
+  font-size: 24px;
+}
+
+.punchline {
+  font-size: 16px;
+}
+
+.inputButton {
+  padding: 20px;
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgb(4, 128, 194);
+  cursor: pointer;
+}

@@ -45,17 +45,20 @@ This includes coding tutorials, resources, coding templates etc.
    - SQL
    - MySQL
    - MongoDB
+   - PostgreSQL
    - Redis
+   - Elastic Search
 9. Cloud Technologies
    - AWS
-10. Deployment Technologies
+10. Containerization Technologies
    - Docker
-
-## Preparation Strategy
-
-1. MERN Stack (4hours - 2pm to 6pm) + DSA (4hours - 6pm to 7pm and 9pm to 12am) + System Design (4hours - 12am to 4am) => 12 hours/day
-2. Expected Deadline is 10days i.e. revise everything by 15th May => Then apply aggressively
-
+   - Kubernetes
+11. Continuous Integration and Continuous Deployment
+   - Github Actions
+12. Caching
+   - CDN
+   - Redis
+   - Memcache
 
 ## Technologies 
 1. Frameworks (Next, Express, Laravel, Flask)
@@ -69,30 +72,5 @@ This includes coding tutorials, resources, coding templates etc.
 9. Architectural Pattern (Microservice, Monolithic, Serverless)
 10. Containerization (Docker, Container, LXC)
 
-## Cloud Native Architecture
-
-There are 2 main focus - Availability and Scalability
-There are 4 pillars to cloud native 
-1. DevOps
-2. Cloud Native Open Standards
-3. Containers
-4. Microservies
-
-Frontend - React, Vue, Angular
-Backend - Flask, Django, Ruby, Node, Golang
-Database - MySQL, PostgreSQL, MongoDB
-
-
-Javascript/Java/Python
-Javascript (React,Angular,Vue + Node,Express)
-Java (Spring Boot)
-Python (Django)
-
-Database (SQL and NoSQL databases)
-Cloud (AWS, Azure, GCP)
-CI/CD (github actions)
-
-My goal is the go all in. I want to target best of the companies with best of the package.
-Target : 100K dollars
-
-### PROJECTS
+## What companies are looking for?
+Docker, Kubernetes, AWS
