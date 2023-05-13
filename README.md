@@ -72,5 +72,17 @@ This includes coding tutorials, resources, coding templates etc.
 9. Architectural Pattern (Microservice, Monolithic, Serverless)
 10. Containerization (Docker, Container, LXC)
 
-## What companies are looking for?
-Docker, Kubernetes, AWS
+## DevOps
+1. Infrastructure
+2. Automation
+3. Monitoring
+
+Tools 
+1. Linux
+2. Networking
+3. Virtualization and OS
+4. Programming and Git
+5. Cloud
+6. Infrastructure as Code (Yaml, Terraform, Ansible)
+7. CICD (GitLab, Jenkins)
+8. Containerization

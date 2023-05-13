@@ -1,0 +1,14 @@
+body {
+  background-color: beige;
+}
+
+.header {
+  color: red;
+}
+
+.colorBox {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin-top: 50px;
+}
