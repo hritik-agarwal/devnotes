@@ -30,59 +30,59 @@ This includes coding tutorials, resources, coding templates etc.
 3. Low Level Design (Object Oriented Design)
 4. High Level Design (System Design)
 5. Programming Languages
-   - C++
+   - Java
+   - C/C++
    - Python
    - JavaScript
 6. Frontend Technologies
-   - HTML
-   - CSS
-   - React
-   - React Native
+   - HTML, CSS
+   - Javascript => React, Angular, React Native, Vue, Next
+   - Java, Swift, ASP.NET
 7. Backend Technologies
-   - Node.js
-   - Express.js
+   - Java => Spring
+   - Python => Django, Flask
+   - Javascript => Node.js, Express.js
+   - Golang, Ruby, Rust, C#, VB.NET
 8. Database Technologies
-   - SQL
-   - MySQL
-   - MongoDB
-   - PostgreSQL
-   - Redis
-   - Elastic Search
-9. Cloud Technologies
-   - AWS
-10. Containerization Technologies
+   - SQL Language
+   - SQL Databases - Oracle, MySQL, PostgreSQL
+   - NoSQL Database - MongoDB, Cassandra
+9. Extra Services
+   - Search and analytics engine 
+      - Elastic Search
+10. Cloud Technologies
+      - Amazon Web Services
+      - Google Cloud Platform
+      - Microsoft Azure
+      - Oracle Cloud Infrastructure
+11. Containerization Technologies
    - Docker
    - Kubernetes
-11. Continuous Integration and Continuous Deployment
+12. Continuous Integration and Continuous Deployment
    - Github Actions
-12. Caching
+   - Jenkins
+   - CircleCI
+13. Caching Technologies
    - CDN
    - Redis
    - Memcache
-
-## Technologies 
-1. Frameworks (Next, Express, Laravel, Flask)
-2. Programming Langugaes (Javascript, Typescript, Java, Python, Go, C#, Rust, Ruby, PHP)
-3. Database (Relational (MySQL, PostgreSQL, Aurora), NonRelational (MongoDB, Cassandra, Firebase))
-4. Caching (CDN, BrowserCache, Redis, Memcache)
-5. Testing (Unit testing, Integration Testing, Functional Testing)
-6. VCS (Github, Gitlab, BitBucket)
-7. CI/CD (Github Actions, CircleCI, ArgoCD)
-8. API (REST, GraphQL, tRPC)
-9. Architectural Pattern (Microservice, Monolithic, Serverless)
-10. Containerization (Docker, Container, LXC)
-
-## DevOps
-1. Infrastructure
-2. Automation
-3. Monitoring
-
-Tools 
-1. Linux
-2. Networking
-3. Virtualization and OS
-4. Programming and Git
-5. Cloud
-6. Infrastructure as Code (Yaml, Terraform, Ansible)
-7. CICD (GitLab, Jenkins)
-8. Containerization
+14. Message Queue
+   - Kafka
+   - RabbitMQ
+15. Testing
+   - Unit testing
+   - Integration testing
+   - Functional testing
+16. Architectural Pattern
+   - Microservice
+   - Monolithic
+   - Serverless
+17. API Designs
+   - REST
+   - GraphQL
+   - tRPC
+18. Infrastructure as code
+   - YAML, Terraform, Ansible
+18. Other tools
+   - VCS : Git, Github
+   - Linux
