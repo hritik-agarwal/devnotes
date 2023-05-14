@@ -1,20 +1,16 @@
 ## Topics
 
 1. CPU Management
-
-- Process, Thread, Fork, System Call
-- Process Scheduling
-- Synchronization & Concurrency
-- Deadlock and its Handling
-
+   - Process, Thread, Fork, System Call
+   - Process Scheduling
+   - Synchronization & Concurrency
+   - Deadlock and its Handling
 2. Memory Management
-
-- Free Space
-- Memory Allocation
-- Memory Partition
-- Process Partition
-- Virtual Memory
-
+   - Free Space
+   - Memory Allocation
+   - Memory Partition
+   - Process Partition
+   - Virtual Memory
 3. I/O Management
 
 ## Operating System
