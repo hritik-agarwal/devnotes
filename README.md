@@ -7,82 +7,37 @@ This includes coding tutorials, resources, coding templates etc.
 ## List of Topics
 
 1. Data Structures and Algorithms
-   - Arrays
-   - Strings
-   - Stacks
-   - Queues
-   - LinkedList
-   - Binary Tree
-   - Binary Search Tree
-   - Binary Heap
-   - Hashmaps
-   - Graph
-   - Dynamic Programming
-   - Range Queries
-   - Bit Manipulation
-   - Number Theory
-   - Trie
+   - Arrays, Strings, Stacks, Queues, LinkedList, Binary Tree, Binary Search Tree, Binary Heap
+   - Hashmaps, Graph, Dynamic Programming, Range Queries, Bit Manipulation, Number Theory, Trie
 2. Computer Science Fundamentals
-   - Operating System
-   - Computer Networks
-   - Database Management System
-   - Object Oriented Programming
-3. Low Level Design (Object Oriented Design)
-4. High Level Design (System Design)
-5. Programming Languages
-   - Java
-   - C/C++
-   - Python
-   - JavaScript
+   - Operating System, Computer Networks, Database Management System, Object Oriented Programming
+3. System Design
+   - Low Level Design and High Level Design
+4. Programming Languages
+      - C/C++, Python, JavaScript
 6. Frontend Technologies
-   - HTML, CSS
-   - Javascript => React, Angular, React Native, Vue, Next
-   - Java, Swift, ASP.NET
+      - HTML, CSS, React, React Native
 7. Backend Technologies
-   - Java => Spring
-   - Python => Django, Flask
-   - Javascript => Node.js, Express.js
-   - Golang, Ruby, Rust, C#, VB.NET
+      - Node.js, Express.js
 8. Database Technologies
-   - SQL Language
-   - SQL Databases - Oracle, MySQL, PostgreSQL
-   - NoSQL Database - MongoDB, Cassandra
-9. Extra Services
-   - Search and analytics engine 
+      - MySQL, PostgreSQL, MongoDB
+9. Extra Tools 
       - Elastic Search
 10. Cloud Technologies
-      - Amazon Web Services
-      - Google Cloud Platform
-      - Microsoft Azure
-      - Oracle Cloud Infrastructure
+      - AWS
 11. Containerization Technologies
-   - Docker
-   - Kubernetes
+      - Docker
 12. Continuous Integration and Continuous Deployment
-   - Github Actions
-   - Jenkins
-   - CircleCI
+      - Github Actions
 13. Caching Technologies
-   - CDN
-   - Redis
-   - Memcache
+      - Redis
 14. Message Queue
-   - Kafka
-   - RabbitMQ
+      - RabbitMQ
 15. Testing
-   - Unit testing
-   - Integration testing
-   - Functional testing
+      - Unit, Integration and Functional testing
 16. Architectural Pattern
-   - Microservice
-   - Monolithic
-   - Serverless
+      - Microservice, Monolithic and Serverless
 17. API Designs
-   - REST
-   - GraphQL
-   - tRPC
-18. Infrastructure as code
-   - YAML, Terraform, Ansible
+      - REST, GraphQL
 18. Other tools
-   - VCS : Git, Github
-   - Linux
+      - Git, Github, Linux
