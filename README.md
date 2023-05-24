@@ -2,7 +2,7 @@
 
 - This repository is collection of my coding notes.
 - This includes coding tutorials, resources, coding templates etc.
-- It is a work 🟡 and I will continue to add stuff as I get free time and learn more stuff.
+- It is a work in progress and I will continue to add stuff as I get free time and learn more stuff.
 
 ## List of Topics
 
