@@ -2,9 +2,13 @@
 
 - This repository is collection of my coding notes.
 - This includes coding tutorials, resources, coding templates etc.
-- It is a work in progress and I will continue to add stuff as I get free time and learn more stuff.
+- It is a work 🟡 and I will continue to add stuff as I get free time and learn more stuff.
 
 ## List of Topics
+
+- 🟠 - Not Started
+- 🟡 - In Progress
+- 🟢 - Completed
 
 <table>
    <thead>
@@ -39,21 +43,21 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:grey;">Not Started</li>
-                <li style="color:grey;">Not Started</li>
-                <li style="color:grey;">Not Started</li>
-                <li style="color:grey;">Not Started</li>
-                <li style="color:grey;">Not Started</li>
-                <li style="color:coral;">Completed</li>
-                <li style="color:grey;">Not Started</li>
-                <li style="color:yellow;">In Progress</li>
-                <li style="color:grey;">Not Started</li>
-                <li style="color:coral;">Completed</li>
-                <li style="color:grey;">Not Started</li>
-                <li style="color:yellow;">In Progress</li>
-                <li style="color:grey;">Not Started</li>
-                <li style="color:grey;">Not Started</li>
-                <li style="color:yellow;">In Progress</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:coral;">🟢</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:yellow;">🟡</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:coral;">🟢</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:yellow;">🟡</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:yellow;">🟡</li>
               </ul>
           </td>
       </tr>
@@ -69,10 +73,10 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:yellow;">In Progress</li>
-                <li style="color:yellow;">In Progress</li>
-                <li style="color:yellow;">In Progress</li>
-                <li style="color:yellow;">In Progress</li>
+                <li style="color:yellow;">🟡</li>
+                <li style="color:yellow;">🟡</li>
+                <li style="color:yellow;">🟡</li>
+                <li style="color:yellow;">🟡</li>
               </ul>
           </td>
       </tr>
@@ -86,8 +90,8 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:grey;">Not Started</li>
-                <li style="color:grey;">Not Started</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:grey;">🟠</li>
               </ul>
           </td>
       </tr>
@@ -102,9 +106,9 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:grey;">Not Started</li>
-                <li style="color:grey;">Not Started</li>
-                <li style="color:yellow;">In Progress</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:yellow;">🟡</li>
               </ul>
           </td>
       </tr>
@@ -120,10 +124,10 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:coral;">Completed</li>
-                <li style="color:coral;">Completed</li>
-                <li style="color:yellow;">In Progress</li>
-                <li style="color:grey;">Not Started</li>
+                <li style="color:coral;">🟢</li>
+                <li style="color:coral;">🟢</li>
+                <li style="color:yellow;">🟡</li>
+                <li style="color:grey;">🟠</li>
               </ul>
           </td>
       </tr>
@@ -137,8 +141,8 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:grey;">Not Started</li>
-                <li style="color:grey;">Not Started</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:grey;">🟠</li>
               </ul>
           </td>
       </tr>
@@ -153,9 +157,9 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:coral;">Completed</li>
-                <li style="color:yellow;">In Progress</li>
-                <li style="color:yellow;">In Progress</li>
+                <li style="color:coral;">🟢</li>
+                <li style="color:yellow;">🟡</li>
+                <li style="color:yellow;">🟡</li>
               </ul>
           </td>
       </tr>
@@ -173,12 +177,12 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:grey;">Not Started</li>
-                <li style="color:grey;">Not Started</li>
-                <li style="color:grey;">Not Started</li>
-                <li style="color:yellow;">In Progress</li>
-                <li style="color:yellow;">In Progress</li>
-                <li style="color:grey;">Not Started</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:grey;">🟠</li>
+                <li style="color:yellow;">🟡</li>
+                <li style="color:yellow;">🟡</li>
+                <li style="color:grey;">🟠</li>
               </ul>
           </td>
       </tr>
@@ -192,8 +196,8 @@
           </td>
           <td>
             <ul style="list-style-type:none;">
-                <li style="color:yellow;">In Progress</li>
-                <li style="color:grey;">Not Started</li>
+                <li style="color:yellow;">🟡</li>
+                <li style="color:grey;">🟠</li>
             </ul>
           </td>
       </tr>
@@ -206,7 +210,7 @@
           </td>
           <td>
             <ul style="list-style-type:none;">
-                <li style="color:grey;">Not Started</li>
+                <li style="color:grey;">🟠</li>
             </ul>
           </td>
       </tr>
@@ -219,7 +223,7 @@
           </td>
           <td>
             <ul style="list-style-type:none;">
-                <li style="color:grey;">Not Started</li>
+                <li style="color:grey;">🟠</li>
             </ul>
           </td>
       </tr>
@@ -233,7 +237,7 @@
           </td>
           <td>
             <ul style="list-style-type:none;">
-                <li style="color:grey;">Not Started</li>
+                <li style="color:grey;">🟠</li>
             </ul>
           </td>
       </tr>
