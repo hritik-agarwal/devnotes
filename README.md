@@ -48,7 +48,7 @@
                 <li style="color:grey;">🟠</li>
                 <li style="color:grey;">🟠</li>
                 <li style="color:grey;">🟠</li>
-                <li style="color:coral;">🟢</li>
+                <li style="color:coral;">🟡</li>
                 <li style="color:grey;">🟠</li>
                 <li style="color:yellow;">🟡</li>
                 <li style="color:grey;">🟠</li>
