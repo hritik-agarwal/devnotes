@@ -8,7 +8,7 @@
 
 - 🟠 - Not Started
 - 🟡 - In Progress
-- 🟢 - Completed
+- 🟢 - Completed (Coverage: Enough to start using it.)
 
 <table>
    <thead>
