@@ -43,21 +43,21 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:grey;">🟠</li>
-                <li style="color:grey;">🟠</li>
-                <li style="color:grey;">🟠</li>
-                <li style="color:grey;">🟠</li>
-                <li style="color:grey;">🟠</li>
-                <li style="color:coral;">🟡</li>
-                <li style="color:grey;">🟠</li>
-                <li style="color:yellow;">🟡</li>
-                <li style="color:grey;">🟠</li>
-                <li style="color:coral;">🟢</li>
-                <li style="color:grey;">🟠</li>
-                <li style="color:yellow;">🟡</li>
-                <li style="color:grey;">🟠</li>
-                <li style="color:grey;">🟠</li>
-                <li style="color:yellow;">🟡</li>
+                <li>🟠</li>
+                <li>🟠</li>
+                <li>🟠</li>
+                <li>🟠</li>
+                <li>🟠</li>
+                <li>🟡</li>
+                <li>🟠</li>
+                <li>🟡</li>
+                <li>🟠</li>
+                <li>🟢</li>
+                <li>🟠</li>
+                <li>🟡</li>
+                <li>🟠</li>
+                <li>🟠</li>
+                <li>🟡</li>
               </ul>
           </td>
       </tr>
@@ -73,10 +73,10 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:yellow;">🟡</li>
-                <li style="color:yellow;">🟡</li>
-                <li style="color:yellow;">🟡</li>
-                <li style="color:yellow;">🟡</li>
+                <li>🟡</li>
+                <li>🟡</li>
+                <li>🟡</li>
+                <li>🟡</li>
               </ul>
           </td>
       </tr>
@@ -90,8 +90,8 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:grey;">🟠</li>
-                <li style="color:grey;">🟠</li>
+                <li>🟠</li>
+                <li>🟠</li>
               </ul>
           </td>
       </tr>
@@ -106,9 +106,9 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:grey;">🟠</li>
-                <li style="color:grey;">🟠</li>
-                <li style="color:yellow;">🟡</li>
+                <li>🟠</li>
+                <li>🟠</li>
+                <li>🟡</li>
               </ul>
           </td>
       </tr>
@@ -119,15 +119,17 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>React</li>
+                <li>Redux</li>
                 <li>React Native</li>
               </ul>
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:coral;">🟢</li>
-                <li style="color:coral;">🟢</li>
-                <li style="color:yellow;">🟡</li>
-                <li style="color:grey;">🟠</li>
+                <li>🟢</li>
+                <li>🟢</li>
+                <li>🟡</li>
+                <li>🟢</li>
+                <li>🟠</li>
               </ul>
           </td>
       </tr>
@@ -141,8 +143,8 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:grey;">🟠</li>
-                <li style="color:grey;">🟠</li>
+                <li>🟠</li>
+                <li>🟠</li>
               </ul>
           </td>
       </tr>
@@ -157,9 +159,9 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:coral;">🟢</li>
-                <li style="color:yellow;">🟡</li>
-                <li style="color:yellow;">🟡</li>
+                <li>🟢</li>
+                <li>🟡</li>
+                <li>🟡</li>
               </ul>
           </td>
       </tr>
@@ -177,12 +179,12 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li style="color:grey;">🟠</li>
-                <li style="color:grey;">🟠</li>
-                <li style="color:grey;">🟠</li>
-                <li style="color:yellow;">🟡</li>
-                <li style="color:yellow;">🟡</li>
-                <li style="color:grey;">🟠</li>
+                <li>🟠</li>
+                <li>🟠</li>
+                <li>🟠</li>
+                <li>🟡</li>
+                <li>🟡</li>
+                <li>🟠</li>
               </ul>
           </td>
       </tr>
@@ -196,8 +198,8 @@
           </td>
           <td>
             <ul style="list-style-type:none;">
-                <li style="color:yellow;">🟡</li>
-                <li style="color:grey;">🟠</li>
+                <li>🟡</li>
+                <li>🟠</li>
             </ul>
           </td>
       </tr>
@@ -210,7 +212,7 @@
           </td>
           <td>
             <ul style="list-style-type:none;">
-                <li style="color:grey;">🟠</li>
+                <li>🟠</li>
             </ul>
           </td>
       </tr>
@@ -223,7 +225,7 @@
           </td>
           <td>
             <ul style="list-style-type:none;">
-                <li style="color:grey;">🟠</li>
+                <li>🟠</li>
             </ul>
           </td>
       </tr>
@@ -237,7 +239,7 @@
           </td>
           <td>
             <ul style="list-style-type:none;">
-                <li style="color:grey;">🟠</li>
+                <li>🟠</li>
             </ul>
           </td>
       </tr>
