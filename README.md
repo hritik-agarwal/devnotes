@@ -243,6 +243,7 @@
           <td>
             <ul style="list-style-type:none;">
                 <li>🟠</li>
+                <li>🟠</li>
             </ul>
           </td>
       </tr>
