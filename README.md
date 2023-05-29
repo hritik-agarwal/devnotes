@@ -122,7 +122,6 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>React</li>
-                <li>Redux</li>
                 <li>React Native</li>
               </ul>
           </td>
@@ -131,7 +130,6 @@
                 <li>🟢</li>
                 <li>🟢</li>
                 <li>🟡</li>
-                <li>🟢</li>
                 <li>🟠</li>
               </ul>
           </td>
