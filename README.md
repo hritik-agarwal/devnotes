@@ -5,6 +5,7 @@
 - It is a work in progress and I will continue to add stuff as I get free time and learn more stuff.
 
 ## Quick Note
+
 - If you want to contribute to current listed technologies or give some suggestions or want to add some of your own tech notes, you can fork and create a PR for it. I would be happy to add it.
 
 ## List of Topics
@@ -180,7 +181,7 @@
           </td>
           <td>
               <ul style="list-style-type:none;">
-                <li>🟠</li>
+                <li>🟡</li>
                 <li>🟠</li>
                 <li>🟠</li>
                 <li>🟡</li>
