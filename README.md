@@ -104,12 +104,14 @@
           <td>
               <ul>
                 <li>C/C++</li>
+                <li>Java</li>
                 <li>Python</li>
                 <li>Javascript</li>
               </ul>
           </td>
           <td>
               <ul style="list-style-type:none;">
+                <li>🟠</li>
                 <li>🟠</li>
                 <li>🟠</li>
                 <li>🟡</li>
